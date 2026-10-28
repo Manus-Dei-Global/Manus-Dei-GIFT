@@ -1,0 +1,1852 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#333132" />
+    <meta
+      name="description"
+      content="Manus Dei Global Initiative for Transformation (MDGIFT): transformation and revival through alignment of lives, systems and structures with God's divine order."
+    />
+    <meta
+      name="keywords"
+      content="Manus Dei Global, MDGIFT, transformation, revival, Project I CAN, Bank of Welfare, Priesthood Assembly"
+    />
+    <meta
+      name="author"
+      content="Manus Dei Global Initiative for Transformation"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Manus DEI GLOBAL | Transformation & Revival"
+    />
+    <meta
+      property="og:description"
+      content="Aligning lives, systems, and structures with God's divine order."
+    />
+    <meta property="og:image" content="./resources/mdgift-logo-white.png" />
+    <link rel="icon" type="image/png" href="./resources/mdgift-logo.png" />
+    <title>Manus DEI GLOBAL | Transformation &amp; Revival</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:wght@400;500;600;700;800&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* MDGIFT visual system: edit these variables to update the site palette. */
+      :root {
+        --charcoal: #333132;
+        --gold: #d4a855;
+        --gold-deep: #9b7025;
+        --page: #f7f7f7;
+        --white: #ffffff;
+        --ink-soft: #5d585a;
+        --line: #e2dfdb;
+        --shadow: 0 18px 48px rgba(51, 49, 50, 0.09);
+        --max-width: 1160px;
+        --radius-lg: 24px;
+        --radius-md: 16px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 94px;
+      }
+      body {
+        margin: 0;
+        color: var(--charcoal);
+        background: var(--page);
+        font:
+          16px/1.7 'Open Sans',
+          Arial,
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      button,
+      input,
+      textarea,
+      select {
+        font: inherit;
+      }
+      button,
+      a {
+        -webkit-tap-highlight-color: transparent;
+      }
+      button {
+        cursor: pointer;
+      }
+      .container {
+        width: min(calc(100% - 36px), var(--max-width));
+        margin-inline: auto;
+      }
+      .section {
+        padding: 88px 0;
+      }
+      .eyebrow {
+        color: var(--gold-deep);
+        font-size: 0.73rem;
+        line-height: 1.4;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.19em;
+        margin: 0 0 14px;
+      }
+      h1,
+      h2,
+      h3,
+      .heavy {
+        font-family: 'Archivo Black', Impact, sans-serif;
+        font-weight: 400;
+        line-height: 1.12;
+        letter-spacing: -0.035em;
+        margin: 0;
+      }
+      h2 {
+        font-size: clamp(2rem, 4.6vw, 3.3rem);
+      }
+      h3 {
+        font-size: 1.2rem;
+        letter-spacing: -0.025em;
+      }
+      .script {
+        font-family: 'Yellowtail', cursive;
+        font-weight: 400;
+      }
+      .gold-text {
+        color: var(--gold);
+      }
+      .muted {
+        color: var(--ink-soft);
+      }
+      .section-intro {
+        max-width: 750px;
+        margin-bottom: 34px;
+      }
+      .section-intro > p:last-child {
+        margin-bottom: 0;
+        color: var(--ink-soft);
+        max-width: 740px;
+      }
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background: rgba(247, 247, 247, 0.96);
+        backdrop-filter: blur(14px);
+        border-bottom: 1px solid rgba(51, 49, 50, 0.09);
+      }
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 78px;
+        gap: 20px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        min-width: 0;
+      }
+      .brand img {
+        width: 168px;
+        max-height: 54px;
+        object-fit: contain;
+      }
+      .brand .logo-dark {
+        display: block;
+      }
+      .brand .logo-light {
+        display: none;
+      }
+      .brand-fallback {
+        display: none;
+        align-items: baseline;
+        gap: 5px;
+        white-space: nowrap;
+        font-size: 1rem;
+      }
+      .brand-fallback .manus {
+        font:
+          1.3rem 'Yellowtail',
+          cursive;
+        color: var(--gold-deep);
+      }
+      .brand-fallback .dei {
+        font:
+          1.15rem 'Archivo Black',
+          sans-serif;
+      }
+      .brand-fallback .global {
+        font-size: 0.62rem;
+        letter-spacing: 0.18em;
+      }
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+      .nav-links a {
+        padding: 10px 11px;
+        border-radius: 9px;
+        font-size: 0.88rem;
+        font-weight: 700;
+        position: relative;
+      }
+      .nav-links a:hover,
+      .nav-links a.active {
+        color: var(--gold-deep);
+        background: rgba(212, 168, 85, 0.1);
+      }
+      .btn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 9px;
+        border: 0;
+        border-radius: 999px;
+        font-weight: 800;
+        padding: 13px 20px;
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease,
+          background 0.2s ease;
+        text-align: center;
+      }
+      .btn:hover {
+        transform: translateY(-2px);
+      }
+      .btn-primary {
+        background: var(--gold);
+        color: #292627;
+        box-shadow: 0 10px 24px rgba(212, 168, 85, 0.24);
+      }
+      .btn-primary:hover {
+        background: #e3bd71;
+        box-shadow: 0 13px 30px rgba(212, 168, 85, 0.3);
+      }
+      .btn-outline {
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        color: white;
+        background: transparent;
+      }
+      .btn-outline:hover {
+        background: rgba(255, 255, 255, 0.08);
+      }
+      .menu-toggle {
+        display: none;
+        border: 1px solid var(--line);
+        background: white;
+        border-radius: 12px;
+        padding: 10px;
+        width: 45px;
+        height: 43px;
+      }
+      .menu-toggle span {
+        display: block;
+        height: 2px;
+        width: 22px;
+        margin: 4px auto;
+        background: var(--charcoal);
+        transition: transform 0.2s ease;
+      }
+      .hero {
+        position: relative;
+        isolation: isolate;
+        min-height: 690px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        color: white;
+        background:
+          radial-gradient(
+            ellipse at 83% 16%,
+            rgba(212, 168, 85, 0.36),
+            transparent 25%
+          ),
+          radial-gradient(
+            ellipse at 6% 92%,
+            rgba(212, 168, 85, 0.12),
+            transparent 30%
+          ),
+          linear-gradient(117deg, #252324 0%, #333132 55%, #57452f 100%);
+      }
+      .hero::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background-image:
+          linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+        background-size: 38px 38px;
+        mask-image: linear-gradient(to bottom, black, transparent 92%);
+      }
+      .hero::after {
+        content: '';
+        position: absolute;
+        width: 440px;
+        height: 440px;
+        border-radius: 50%;
+        border: 1px solid rgba(212, 168, 85, 0.3);
+        right: -95px;
+        bottom: -180px;
+        box-shadow:
+          0 0 0 40px rgba(212, 168, 85, 0.035),
+          0 0 0 90px rgba(212, 168, 85, 0.025);
+        z-index: -1;
+      }
+      .hero-inner {
+        padding: 88px 0 96px;
+        max-width: 880px;
+      }
+      .hero-kicker {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: #f0d7a4;
+        font-size: 0.74rem;
+        text-transform: uppercase;
+        letter-spacing: 0.17em;
+        font-weight: 800;
+        margin-bottom: 22px;
+      }
+      .hero-kicker::before {
+        content: '';
+        height: 1px;
+        width: 38px;
+        background: var(--gold);
+      }
+      h1 {
+        font-size: clamp(3rem, 8.6vw, 6.6rem);
+      }
+      .hero-subtitle {
+        max-width: 690px;
+        color: #ece8e5;
+        font-size: clamp(1rem, 2vw, 1.22rem);
+        margin: 25px 0 30px;
+      }
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .hero-note {
+        color: #d6cfca;
+        margin: 28px 0 0;
+        font-size: 0.92rem;
+      }
+      .hero-note .script {
+        color: #e4bd6a;
+        font-size: 1.35rem;
+      }
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        align-items: start;
+        gap: 38px;
+      }
+      .about-copy p:not(.eyebrow) {
+        color: var(--ink-soft);
+        font-size: 1.02rem;
+      }
+      .scripture {
+        position: relative;
+        overflow: hidden;
+        border-radius: var(--radius-lg);
+        background: var(--charcoal);
+        color: white;
+        padding: 34px;
+        box-shadow: var(--shadow);
+      }
+      .scripture::after {
+        content: '“';
+        position: absolute;
+        top: -58px;
+        right: 10px;
+        color: rgba(212, 168, 85, 0.16);
+        font:
+          190px Georgia,
+          serif;
+      }
+      .scripture blockquote {
+        position: relative;
+        z-index: 1;
+        padding: 0;
+        margin: 0;
+        color: #f2d69c;
+        font:
+          1.75rem/1.38 'Yellowtail',
+          cursive;
+      }
+      .scripture cite {
+        display: block;
+        margin-top: 20px;
+        color: #e6e0dc;
+        text-transform: uppercase;
+        letter-spacing: 0.13em;
+        font-size: 0.76rem;
+        font-weight: 800;
+        font-style: normal;
+      }
+      .framework {
+        background: #eeece9;
+      }
+      .three-grid,
+      .initiative-grid {
+        display: grid;
+        gap: 18px;
+      }
+      .three-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      .initiative-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      .card {
+        background: white;
+        border: 1px solid rgba(51, 49, 50, 0.08);
+        border-radius: var(--radius-md);
+        padding: 28px;
+        box-shadow: 0 10px 34px rgba(51, 49, 50, 0.045);
+      }
+      .framework-card {
+        min-height: 292px;
+        position: relative;
+        overflow: hidden;
+      }
+      .framework-card::after {
+        content: '';
+        position: absolute;
+        bottom: -40px;
+        right: -38px;
+        width: 110px;
+        height: 110px;
+        border: 13px solid rgba(212, 168, 85, 0.13);
+        border-radius: 50%;
+      }
+      .card-label {
+        color: var(--gold-deep);
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        font-size: 0.72rem;
+        font-weight: 800;
+        display: block;
+        margin-bottom: 15px;
+      }
+      .framework-card p,
+      .initiative-card p {
+        color: var(--ink-soft);
+        font-size: 0.94rem;
+        margin-bottom: 0;
+      }
+      .initiative-card {
+        min-height: 316px;
+        transition:
+          transform 0.24s ease,
+          box-shadow 0.24s ease;
+      }
+      .initiative-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 18px 42px rgba(51, 49, 50, 0.1);
+      }
+      .initiative-icon {
+        width: 52px;
+        height: 52px;
+        border-radius: 16px;
+        background: rgba(212, 168, 85, 0.16);
+        color: var(--gold-deep);
+        display: grid;
+        place-items: center;
+        margin-bottom: 19px;
+      }
+      .initiative-icon svg {
+        width: 27px;
+        height: 27px;
+      }
+      .initiative-card h3 {
+        margin-bottom: 8px;
+      }
+      .initiative-tagline {
+        margin: 0 0 10px !important;
+        font-size: 0.84rem !important;
+        font-weight: 800;
+        color: var(--gold-deep) !important;
+      }
+      .arms {
+        padding-left: 18px;
+        color: var(--ink-soft);
+        font-size: 0.88rem;
+      }
+      .impact {
+        background: var(--charcoal);
+        color: white;
+      }
+      .impact-grid {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 35px;
+        align-items: center;
+      }
+      .impact p:not(.eyebrow) {
+        color: #d8d1cc;
+      }
+      .impact-items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+      }
+      .impact-item {
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.035);
+        padding: 22px 12px;
+        text-align: center;
+      }
+      .impact-item strong {
+        display: block;
+        color: var(--gold);
+        font:
+          1.55rem 'Archivo Black',
+          sans-serif;
+      }
+      .impact-item span {
+        font-size: 0.76rem;
+        color: #d6ceca;
+        display: block;
+        margin-top: 6px;
+      }
+      .contact-band {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        padding: 32px;
+        border: 1px solid var(--line);
+        background: linear-gradient(120deg, #fff, #f2eee5);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow);
+      }
+      .contact-band h2 {
+        font-size: clamp(1.6rem, 4vw, 2.35rem);
+      }
+      .contact-band p {
+        margin-bottom: 0;
+        color: var(--ink-soft);
+        max-width: 680px;
+      }
+      .faq-list {
+        max-width: 900px;
+        margin-top: 30px;
+      }
+      .faq-item {
+        border-bottom: 1px solid var(--line);
+      }
+      .faq-question {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 18px;
+        text-align: left;
+        border: 0;
+        background: transparent;
+        padding: 23px 0;
+        color: var(--charcoal);
+        font-weight: 800;
+      }
+      .faq-plus {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: var(--charcoal);
+        color: white;
+        display: grid;
+        place-items: center;
+        flex: 0 0 auto;
+        transition: transform 0.2s ease;
+        font-size: 1.1rem;
+      }
+      .faq-answer {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.25s ease;
+      }
+      .faq-answer > div {
+        overflow: hidden;
+      }
+      .faq-answer p {
+        color: var(--ink-soft);
+        margin: 0;
+        padding-bottom: 22px;
+      }
+      .faq-item.open .faq-answer {
+        grid-template-rows: 1fr;
+      }
+      .faq-item.open .faq-plus {
+        transform: rotate(45deg);
+      }
+      .contact {
+        background: #eeece9;
+      }
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 0.8fr 1.2fr;
+        gap: 26px;
+        align-items: start;
+      }
+      .contact-panel {
+        padding: 32px;
+        border-radius: var(--radius-lg);
+        background: var(--charcoal);
+        color: white;
+      }
+      .contact-panel p {
+        color: #d9d2cd;
+      }
+      .contact-list {
+        display: grid;
+        gap: 13px;
+        margin-top: 24px;
+      }
+      .contact-list a {
+        color: #f0d399;
+        overflow-wrap: anywhere;
+      }
+      .qr-card {
+        padding: 18px;
+        border-radius: 16px;
+        background: white;
+        color: var(--charcoal);
+        margin-top: 24px;
+        max-width: 250px;
+      }
+      .qr-card img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: contain;
+      }
+      .qr-card p {
+        color: var(--ink-soft);
+        font-size: 0.78rem;
+        margin: 10px 0 0;
+        text-align: center;
+      }
+      .form-card {
+        background: white;
+        border: 1px solid rgba(51, 49, 50, 0.08);
+        border-radius: var(--radius-lg);
+        padding: 30px;
+        box-shadow: var(--shadow);
+      }
+      .form-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+      .field {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        min-width: 0;
+      }
+      .field.full {
+        grid-column: 1 / -1;
+      }
+      label {
+        font-size: 0.83rem;
+        font-weight: 800;
+      }
+      input,
+      textarea,
+      select {
+        width: 100%;
+        min-height: 48px;
+        padding: 12px 14px;
+        border: 1px solid #d7d3cf;
+        border-radius: 11px;
+        color: var(--charcoal);
+        background: #fcfbf9;
+        outline: none;
+      }
+      textarea {
+        min-height: 136px;
+        resize: vertical;
+      }
+      input:focus,
+      textarea:focus,
+      select:focus {
+        border-color: var(--gold-deep);
+        box-shadow: 0 0 0 3px rgba(212, 168, 85, 0.17);
+      }
+      .invalid {
+        border-color: #9c3022;
+      }
+      .field-error {
+        min-height: 17px;
+        font-size: 0.74rem;
+        color: #9c3022;
+      }
+      .form-status {
+        display: none;
+        margin-bottom: 17px;
+        padding: 13px 15px;
+        border-radius: 11px;
+        font-weight: 700;
+        font-size: 0.9rem;
+      }
+      .form-status.show {
+        display: block;
+      }
+      .form-status.success {
+        background: #e8f4e7;
+        color: #245323;
+      }
+      .form-status.error {
+        background: #fff0ed;
+        color: #8e2b1f;
+      }
+      .form-note {
+        color: var(--ink-soft);
+        font-size: 0.78rem;
+        margin: 15px 0 0;
+      }
+      .footer {
+        background: var(--charcoal);
+        color: white;
+        padding: 54px 0 24px;
+      }
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.75fr 0.9fr;
+        gap: 38px;
+      }
+      .footer-logo {
+        width: 185px;
+        max-height: 70px;
+        object-fit: contain;
+      }
+      .footer-brand p {
+        max-width: 380px;
+        color: #d1cac5;
+        font-size: 0.9rem;
+        margin-top: 17px;
+      }
+      .footer h3 {
+        font-size: 0.95rem;
+        margin-bottom: 15px;
+        letter-spacing: 0;
+      }
+      .footer-links {
+        display: grid;
+        gap: 8px;
+        color: #d1cac5;
+        font-size: 0.88rem;
+      }
+      .footer-links a:hover {
+        color: #f0d399;
+      }
+      .socials {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin-top: 17px;
+      }
+      .socials a {
+        width: 38px;
+        height: 38px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        color: #f0d399;
+        font-size: 0.7rem;
+        font-weight: 800;
+      }
+      .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+        border-top: 1px solid rgba(255, 255, 255, 0.13);
+        padding-top: 20px;
+        margin-top: 38px;
+        color: #bdb5b0;
+        font-size: 0.78rem;
+      }
+      .back-top {
+        position: fixed;
+        right: 18px;
+        bottom: 18px;
+        z-index: 70;
+        width: 46px;
+        height: 46px;
+        border: 0;
+        border-radius: 50%;
+        background: var(--gold);
+        color: var(--charcoal);
+        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
+        font-size: 1.2rem;
+        font-weight: 900;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(10px);
+        transition: all 0.2s ease;
+      }
+      .back-top.show {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+      }
+      .reveal {
+        opacity: 0;
+        transform: translateY(20px);
+        transition:
+          opacity 0.65s ease,
+          transform 0.65s ease;
+      }
+      .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      :focus-visible {
+        outline: 3px solid rgba(212, 168, 85, 0.8);
+        outline-offset: 3px;
+      }
+      @media (max-width: 980px) {
+        .nav-links a {
+          padding-inline: 8px;
+          font-size: 0.82rem;
+        }
+        .nav-cta {
+          padding: 11px 14px;
+          font-size: 0.85rem;
+        }
+        .about-grid,
+        .impact-grid,
+        .contact-grid {
+          grid-template-columns: 1fr;
+        }
+        .three-grid,
+        .initiative-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .framework-card,
+        .initiative-card {
+          min-height: auto;
+        }
+        .footer-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .footer-brand {
+          grid-column: 1 / -1;
+        }
+      }
+      @media (max-width: 760px) {
+        html {
+          scroll-padding-top: 80px;
+        }
+        .container {
+          width: min(calc(100% - 28px), var(--max-width));
+        }
+        .section {
+          padding: 69px 0;
+        }
+        .nav {
+          min-height: 70px;
+        }
+        .brand img {
+          width: 145px;
+          max-height: 48px;
+        }
+        .menu-toggle {
+          display: block;
+        }
+        .nav-cta {
+          display: none;
+        }
+        .nav-links {
+          position: fixed;
+          left: 14px;
+          right: 14px;
+          top: 78px;
+          display: grid;
+          gap: 2px;
+          background: white;
+          padding: 12px;
+          border: 1px solid var(--line);
+          border-radius: 17px;
+          box-shadow: 0 20px 55px rgba(0, 0, 0, 0.16);
+          opacity: 0;
+          transform: translateY(-10px);
+          pointer-events: none;
+          transition: all 0.2s ease;
+        }
+        .nav-links.open {
+          opacity: 1;
+          transform: translateY(0);
+          pointer-events: auto;
+        }
+        .nav-links a {
+          padding: 13px;
+          font-size: 0.95rem;
+        }
+        body.menu-open {
+          overflow: hidden;
+        }
+        .hero {
+          min-height: 650px;
+        }
+        .hero-inner {
+          padding: 74px 0 81px;
+        }
+        h1 {
+          font-size: clamp(2.85rem, 13.8vw, 5.1rem);
+        }
+        .hero-kicker {
+          font-size: 0.67rem;
+          letter-spacing: 0.12em;
+        }
+        .hero-actions {
+          align-items: stretch;
+        }
+        .hero-actions .btn {
+          width: 100%;
+        }
+        .three-grid,
+        .initiative-grid,
+        .impact-items,
+        .form-grid,
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+        .footer-brand {
+          grid-column: auto;
+        }
+        .contact-band {
+          display: block;
+          padding: 24px;
+        }
+        .contact-band .btn {
+          margin-top: 20px;
+          width: 100%;
+        }
+        .scripture {
+          padding: 26px;
+        }
+        .scripture blockquote {
+          font-size: 1.55rem;
+        }
+        .card,
+        .form-card,
+        .contact-panel {
+          padding: 24px;
+        }
+        .field.full {
+          grid-column: auto;
+        }
+        .footer-bottom {
+          display: grid;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          transition-duration: 0.01ms !important;
+        }
+        .reveal {
+          opacity: 1;
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="Manus DEI GLOBAL home">
+          <img
+            class="logo-dark"
+            src="./resources/mdgift-logo.png"
+            alt="Manus DEI GLOBAL logo"
+            onerror="
+              this.style.display = 'none';
+              document.querySelector('.brand-fallback').style.display =
+                'inline-flex';
+            "
+          />
+          <span class="brand-fallback" aria-hidden="true"
+            ><span class="manus">Manus</span><span class="dei">DEI</span
+            ><span class="global">GLOBAL</span></span
+          >
+        </a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-links"
+          aria-label="Open navigation menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="primary-links">
+          <a href="#about">About</a><a href="#initiatives">Initiatives</a
+          ><a href="#framework">Framework</a><a href="#faq">FAQ</a
+          ><a href="#contact">Contact</a>
+        </div>
+        <a class="btn btn-primary nav-cta" href="#contact">Partner With Us</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-inner reveal">
+          <p class="hero-kicker">
+            Manus Dei Global Initiative for Transformation
+          </p>
+          <h1 id="hero-title">
+            Transformation <span class="gold-text">&amp;</span><br />Revival
+          </h1>
+          <p class="hero-subtitle">
+            Aligning lives, systems, and structures with God's divine order.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact"
+              >Connect With MDGIFT <span aria-hidden="true">↗</span></a
+            >
+            <a class="btn btn-outline" href="#initiatives"
+              >Explore Our Initiatives</a
+            >
+          </div>
+          <p class="hero-note">
+            <span class="script">Building according to God's pattern.</span> A
+            transgenerational mandate, expressed through service to humanity.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container about-grid">
+          <div class="about-copy reveal">
+            <p class="eyebrow">Who We Are</p>
+            <h2>
+              An institutional mandate for
+              <span style="color: var(--gold-deep)"
+                >lasting transformation.</span
+              >
+            </h2>
+            <p>
+              Manus Dei Global Initiative for Transformation (MDGIFT) is an
+              institutional organization with a transgenerational mandate to
+              bring about transformation and revival, bringing spiritual,
+              personal, and societal transformation and revival by aligning
+              lives, systems, and structures with God's divine order.
+            </p>
+            <p>
+              Anchored on the scriptural foundation of Exodus 25:8–9, MDGIFT
+              seeks to build according to God's blueprint, restore order, and
+              raise a Kingdom standard through diverse initiatives.
+            </p>
+          </div>
+          <aside class="scripture reveal" aria-label="Foundational scripture">
+            <blockquote>
+              “Have the people of Israel build me a holy sanctuary so I can live
+              among them. You must build this Tabernacle and its furnishings
+              exactly like the pattern I will show you.”
+            </blockquote>
+            <cite>Exodus 25:8–9, NLT</cite>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section framework" id="framework">
+        <div class="container">
+          <div class="section-intro reveal">
+            <p class="eyebrow">The MDGIFT Framework</p>
+            <h2>
+              One foundation.
+              <span style="color: var(--gold-deep)">Three anchors.</span>
+            </h2>
+            <p>
+              Our mandate, mission and vision provide a shared direction for
+              every expression of Manus Dei Global Initiative for
+              Transformation.
+            </p>
+          </div>
+          <div class="three-grid">
+            <article class="card framework-card reveal">
+              <span class="card-label">01 / Mandate</span>
+              <h3>Transformation &amp; Revival</h3>
+              <p>
+                To bring about spiritual, personal, and societal transformation
+                and revival by aligning lives, systems, and structures with
+                God's divine order.
+              </p>
+            </article>
+            <article class="card framework-card reveal">
+              <span class="card-label">02 / Mission</span>
+              <h3>Divine Service to Humanity</h3>
+              <p>
+                To serve humanity through initiatives that communicate the love,
+                truth, presence, and purposes of God, providing spiritual,
+                social, practical, and transformational solutions to human
+                needs.
+              </p>
+            </article>
+            <article class="card framework-card reveal">
+              <span class="card-label">03 / Vision</span>
+              <h3>Order, Revival &amp; the Redemption of Humanity</h3>
+              <p>
+                To see humanity restored to God's divine order, awakened through
+                revival, and brought into the fullness of His purpose, resulting
+                in the redemption and transformation of individuals,
+                communities, systems, and society.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="initiatives">
+        <div class="container">
+          <div class="section-intro reveal">
+            <p class="eyebrow">Our Initiatives</p>
+            <h2>
+              Many expressions.
+              <span style="color: var(--gold-deep)">One divine direction.</span>
+            </h2>
+            <p>
+              MDGIFT advances its mandate through diverse initiatives designed
+              to address different dimensions of spiritual, human, social, and
+              societal transformation.
+            </p>
+          </div>
+          <div class="initiative-grid">
+            <article class="card initiative-card reveal">
+              <div class="initiative-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path
+                    d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6M8 10h.01M16 10h.01"
+                  />
+                </svg>
+              </div>
+              <h3>Manus Dei Christian Centre</h3>
+              <p class="initiative-tagline">“Building According to Pattern”</p>
+              <p>
+                A nurturing centre committed to transforming lives and reviving
+                souls through discipleship, ministry, training, consultation,
+                fellowship, and practical expressions of the Christian faith.
+              </p>
+              <p><strong>Arms include:</strong></p>
+              <ul class="arms">
+                <li>Manus Dei Clinic</li>
+                <li>Manus Dei Ministry</li>
+                <li>Manus Dei United</li>
+                <li>Manus Dei Kingdom Training Institute</li>
+                <li>Manus Dei Foundation</li>
+              </ul>
+            </article>
+            <article class="card initiative-card reveal">
+              <div class="initiative-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M12 3v18M5 8h14M5 16h14" />
+                  <circle cx="12" cy="12" r="9" />
+                </svg>
+              </div>
+              <h3>Project I CAN</h3>
+              <p class="initiative-tagline">
+                “A Simple CAN Can Make a Change.”
+              </p>
+              <p>
+                A micro-giving initiative that turns small contributions into
+                immediate acts of compassion for people in need. It demonstrates
+                how small acts of generosity can become meaningful expressions
+                of love, care, and practical support.
+              </p>
+            </article>
+            <article class="card initiative-card reveal">
+              <div class="initiative-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 3a13 13 0 0 1 0 18M3 12h18M5 6.5h14M5 17.5h14" />
+                </svg>
+              </div>
+              <h3>Mission Hope &amp; Light</h3>
+              <p class="initiative-tagline">“Tripartite Prosperity”</p>
+              <p>
+                A Christ-centred initiative awakening lives through the light of
+                Christ and guiding individuals into true prosperity, beginning
+                with the soul and extending into every area of life.
+                Transformation begins with salvation and impacts the spirit,
+                soul, and body.
+              </p>
+            </article>
+            <article class="card initiative-card reveal">
+              <div class="initiative-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path
+                    d="M3 7h8l3 3h7M17 6l4 4-4 4M21 17h-8l-3-3H3M7 11l-4 3 4 4"
+                  />
+                </svg>
+              </div>
+              <h3>BRiDGE</h3>
+              <p class="initiative-tagline">
+                “Bridging the Gap Between the Church and the Unchurched”
+              </p>
+              <p>
+                An outreach initiative taking the Gospel beyond traditional
+                church settings and into the lives of those yet to encounter its
+                truth, through intentional presence, practical support, and
+                compassionate engagement.
+              </p>
+            </article>
+            <article class="card initiative-card reveal">
+              <div class="initiative-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path
+                    d="M12 3 4 7v5c0 5 3.4 7.8 8 9 4.6-1.2 8-4 8-9V7l-8-4Z"
+                  />
+                  <path d="m8 12 2.5 2.5L16 9" />
+                </svg>
+              </div>
+              <h3>Bank of Welfare</h3>
+              <p class="initiative-tagline">
+                “Relief – Stability – Sustainable”
+              </p>
+              <p>
+                A community-driven initiative focused on relief and welfare,
+                building pathways from short-term assistance towards stability
+                and sustainability.
+              </p>
+              <p>
+                <strong
+                  >From crisis to capability.<br />From dependence to
+                  contribution.</strong
+                >
+              </p>
+            </article>
+            <article class="card initiative-card reveal">
+              <div class="initiative-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+              </div>
+              <h3>Priesthood Assembly</h3>
+              <p class="initiative-tagline">“Called. Chosen. Consecrated.”</p>
+              <p>
+                A sacred gathering of the called and chosen, rooted in 1 Peter
+                2:9 and Revelation 5:10, consecrated as vessels to incubate
+                God's glory, carry His presence, and advance His Kingdom.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section impact" id="impact">
+        <div class="container impact-grid">
+          <div class="reveal">
+            <p class="eyebrow">The Heart of the Work</p>
+            <h2>
+              Purpose made practical.
+              <span class="gold-text">Transformation made tangible.</span>
+            </h2>
+            <p>
+              MDGIFT brings spiritual conviction into meaningful service:
+              formation, outreach, compassion, welfare, and the renewal of
+              individuals, communities, systems, and society.
+            </p>
+            <p>
+              Rather than publish unverified statistics or testimonials, this
+              section reflects the organization’s documented framework and
+              initiatives.
+            </p>
+          </div>
+          <div
+            class="impact-items reveal"
+            aria-label="MDGIFT framework summary"
+          >
+            <div class="impact-item">
+              <strong>6</strong><span>Initiatives</span>
+            </div>
+            <div class="impact-item">
+              <strong>1</strong><span>Shared Mandate</span>
+            </div>
+            <div class="impact-item">
+              <strong>∞</strong><span>Generations</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="connect">
+        <div class="container">
+          <div class="contact-band reveal">
+            <div>
+              <p class="eyebrow">Connect With Us</p>
+              <h2>Be part of purposeful service.</h2>
+              <p>
+                For partnership enquiries, volunteering, initiative support or
+                general enquiries, start a conversation with Manus Dei Global
+                Initiative for Transformation.
+              </p>
+            </div>
+            <a
+              class="btn btn-primary"
+              href="https://tinyurl.com/manusdeiglobal"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Contact MDGIFT ↗</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="container">
+          <div class="section-intro reveal">
+            <p class="eyebrow">Frequently Asked Questions</p>
+            <h2>
+              Clarity before
+              <span style="color: var(--gold-deep)">connection.</span>
+            </h2>
+          </div>
+          <div class="faq-list">
+            <div class="faq-item reveal">
+              <button class="faq-question" aria-expanded="false">
+                <span>What is MDGIFT?</span
+                ><span class="faq-plus" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <div>
+                  <p>
+                    Manus Dei Global Initiative for Transformation is an
+                    institutional organization with a transgenerational mandate
+                    for transformation and revival, aligning lives, systems, and
+                    structures with God's divine order.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item reveal">
+              <button class="faq-question" aria-expanded="false">
+                <span>What is the foundation of MDGIFT?</span
+                ><span class="faq-plus" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <div>
+                  <p>
+                    MDGIFT is anchored on Exodus 25:8–9, which informs its
+                    commitment to building according to God's blueprint,
+                    restoring order, and raising a Kingdom standard.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item reveal">
+              <button class="faq-question" aria-expanded="false">
+                <span>What are the six initiatives?</span
+                ><span class="faq-plus" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <div>
+                  <p>
+                    Manus Dei Christian Centre, Project I CAN, Mission Hope
+                    &amp; Light, BRiDGE, Bank of Welfare, and Priesthood
+                    Assembly.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item reveal">
+              <button class="faq-question" aria-expanded="false">
+                <span>How can I support or partner with MDGIFT?</span
+                ><span class="faq-plus" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <div>
+                  <p>
+                    Reach out through the official contact link at
+                    tinyurl.com/manusdeiglobal or the WhatsApp contact details
+                    provided on this page. You can indicate whether your
+                    interest is in partnership, volunteering, or initiative
+                    support.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item reveal">
+              <button class="faq-question" aria-expanded="false">
+                <span
+                  >Does MDGIFT address practical social needs as well as
+                  spiritual formation?</span
+                ><span class="faq-plus" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <div>
+                  <p>
+                    Yes. Its mission explicitly includes spiritual, social,
+                    practical, and transformational solutions to human needs,
+                    expressed through initiatives such as Project I CAN, BRiDGE,
+                    and Bank of Welfare alongside its ministry and discipleship
+                    work.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="container">
+          <div class="section-intro reveal">
+            <p class="eyebrow">Contact / Registration</p>
+            <h2>
+              Let's start a
+              <span style="color: var(--gold-deep)">conversation.</span>
+            </h2>
+            <p>
+              Share your interest and take the next step towards connecting with
+              MDGIFT.
+            </p>
+          </div>
+          <div class="contact-grid">
+            <aside class="contact-panel reveal">
+              <p class="eyebrow">Reach MDGIFT</p>
+              <h3>Manus Dei Global Initiative for Transformation</h3>
+              <p>
+                For official enquiries, partnership and initiative connections:
+              </p>
+              <div class="contact-list">
+                <div>
+                  <strong>Telephone / WhatsApp</strong><br /><a
+                    href="tel:+2348086001110"
+                    >+234 808 600 1110</a
+                  >
+                </div>
+                <div><a href="tel:+2349091001119">+234 909 100 1119</a></div>
+                <div><a href="tel:+2349091001110">+234 909 100 1110</a></div>
+                <div>
+                  <strong>Official contact link</strong><br /><a
+                    href="https://tinyurl.com/manusdeiglobal"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >tinyurl.com/manusdeiglobal ↗</a
+                  >
+                </div>
+              </div>
+              <div class="qr-card">
+                <a
+                  href="https://tinyurl.com/manusdeiglobal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open MDGIFT WhatsApp contact link"
+                >
+                  <img
+                    src="./resources/mdgift-whatsapp-qr.jpeg"
+                    alt="QR code to start a WhatsApp chat with Manus Dei Global Initiative for Transformation"
+                    loading="lazy"
+                    onerror="this.style.display = 'none'"
+                  />
+                </a>
+                <p>
+                  Scan to start a WhatsApp chat with MDGIFT, or use the official
+                  contact link above.
+                </p>
+              </div>
+            </aside>
+
+            <div class="form-card reveal">
+              <div
+                class="form-status"
+                id="form-status"
+                role="status"
+                aria-live="polite"
+              ></div>
+              <form id="contact-form" novalidate>
+                <div class="form-grid">
+                  <div class="field">
+                    <label for="name">Full name *</label
+                    ><input
+                      id="name"
+                      name="name"
+                      autocomplete="name"
+                      required
+                    />
+                    <div class="field-error" id="name-error"></div>
+                  </div>
+                  <div class="field">
+                    <label for="email">Email address *</label
+                    ><input
+                      id="email"
+                      name="email"
+                      type="email"
+                      autocomplete="email"
+                      required
+                    />
+                    <div class="field-error" id="email-error"></div>
+                  </div>
+                  <div class="field">
+                    <label for="phone">Phone number *</label
+                    ><input
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      inputmode="tel"
+                      autocomplete="tel"
+                      required
+                    />
+                    <div class="field-error" id="phone-error"></div>
+                  </div>
+                  <div class="field">
+                    <label for="interest">Area of interest</label
+                    ><select id="interest" name="interest">
+                      <option>Partnership</option>
+                      <option>Volunteering</option>
+                      <option>Project I CAN</option>
+                      <option>Bank of Welfare</option>
+                      <option>Manus Dei Christian Centre</option>
+                      <option>Mission Hope &amp; Light</option>
+                      <option>BRiDGE</option>
+                      <option>Priesthood Assembly</option>
+                      <option>General enquiry</option>
+                    </select>
+                  </div>
+                  <div class="field full">
+                    <label for="message">Message *</label
+                    ><textarea
+                      id="message"
+                      name="message"
+                      placeholder="Tell us what you would like to connect about."
+                      required
+                    ></textarea>
+                    <div class="field-error" id="message-error"></div>
+                  </div>
+                  <div class="field full">
+                    <button class="btn btn-primary" type="submit">
+                      Continue to WhatsApp ↗
+                    </button>
+                    <p class="form-note">
+                      Your entries are validated in this browser only. When
+                      valid, the page opens WhatsApp with a prepared message for
+                      you to review and send. Nothing is submitted to a website
+                      server.
+                    </p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#top" aria-label="Back to MDGIFT home"
+              ><img
+                class="footer-logo"
+                src="./resources/mdgift-logo-white.png"
+                alt="Manus DEI GLOBAL white logo"
+                loading="lazy"
+                onerror="this.style.display = 'none'"
+            /></a>
+            <p>
+              Manus Dei Global Initiative for Transformation. Aligning lives,
+              systems, and structures with God's divine order.
+            </p>
+            <div class="socials" aria-label="Official contact links">
+              <a
+                href="https://tinyurl.com/manusdeiglobal"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="MDGIFT official link"
+                >WEB</a
+              >
+              <a
+                href="https://wa.me/2348086001110"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp MDGIFT"
+                >WA</a
+              >
+              <a href="tel:+2349091001119" aria-label="Call MDGIFT">TEL</a>
+              <a
+                href="mailto:hello@manusdeiglobal.org"
+                aria-label="Email MDGIFT"
+                title="Email is provisional; replace with the confirmed official email"
+                >EM</a
+              >
+            </div>
+          </div>
+          <div>
+            <h3>Quick Links</h3>
+            <div class="footer-links">
+              <a href="#about">About</a><a href="#initiatives">Initiatives</a
+              ><a href="#framework">Framework</a><a href="#faq">FAQ</a
+              ><a href="#contact">Contact</a>
+            </div>
+          </div>
+          <div>
+            <h3>Our Initiatives</h3>
+            <div class="footer-links">
+              <a href="#initiatives">Manus Dei Christian Centre</a
+              ><a href="#initiatives">Project I CAN</a
+              ><a href="#initiatives">Mission Hope &amp; Light</a
+              ><a href="#initiatives">BRiDGE</a
+              ><a href="#initiatives">Bank of Welfare</a
+              ><a href="#initiatives">Priesthood Assembly</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Manus Dei Global Initiative for Transformation</span
+          ><a
+            href="https://tinyurl.com/manusdeiglobal"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Official contact link ↗</a
+          >
+        </div>
+      </div>
+    </footer>
+    <button
+      class="back-top"
+      id="back-top"
+      type="button"
+      aria-label="Back to top"
+    >
+      ↑
+    </button>
+
+    <script>
+      // Mobile navigation: close after choosing a destination or clicking outside.
+      const menuButton = document.querySelector('.menu-toggle');
+      const menu = document.querySelector('.nav-links');
+      function setMenu(open) {
+        menu.classList.toggle('open', open);
+        document.body.classList.toggle('menu-open', open);
+        menuButton.setAttribute('aria-expanded', String(open));
+        menuButton.setAttribute(
+          'aria-label',
+          open ? 'Close navigation menu' : 'Open navigation menu'
+        );
+      }
+      menuButton.addEventListener('click', () =>
+        setMenu(!menu.classList.contains('open'))
+      );
+      menu
+        .querySelectorAll('a')
+        .forEach(link => link.addEventListener('click', () => setMenu(false)));
+      document.addEventListener('click', event => {
+        if (
+          menu.classList.contains('open') &&
+          !menu.contains(event.target) &&
+          !menuButton.contains(event.target)
+        )
+          setMenu(false);
+      });
+
+      // Active navigation section indication.
+      const navLinks = [...menu.querySelectorAll('a')];
+      const observeSections = [
+        ...document.querySelectorAll('main section[id]'),
+      ];
+      if ('IntersectionObserver' in window) {
+        const activeObserver = new IntersectionObserver(
+          entries => {
+            const active = entries
+              .filter(item => item.isIntersecting)
+              .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+            if (!active) return;
+            navLinks.forEach(link =>
+              link.classList.toggle(
+                'active',
+                link.getAttribute('href') === '#' + active.target.id
+              )
+            );
+          },
+          { rootMargin: '-32% 0px -58% 0px', threshold: [0, 0.15, 0.4, 0.7] }
+        );
+        observeSections.forEach(section => activeObserver.observe(section));
+        const revealObserver = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.12 }
+        );
+        document
+          .querySelectorAll('.reveal')
+          .forEach(item => revealObserver.observe(item));
+      } else {
+        document
+          .querySelectorAll('.reveal')
+          .forEach(item => item.classList.add('visible'));
+      }
+
+      // FAQ accordion: one open answer at a time, keyboard-accessible native buttons.
+      document.querySelectorAll('.faq-question').forEach(button => {
+        button.addEventListener('click', () => {
+          const item = button.closest('.faq-item');
+          const shouldOpen = !item.classList.contains('open');
+          document.querySelectorAll('.faq-item').forEach(other => {
+            other.classList.remove('open');
+            other
+              .querySelector('.faq-question')
+              .setAttribute('aria-expanded', 'false');
+          });
+          if (shouldOpen) {
+            item.classList.add('open');
+            button.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+
+      // Back-to-top button.
+      const backTop = document.getElementById('back-top');
+      window.addEventListener(
+        'scroll',
+        () => backTop.classList.toggle('show', window.scrollY > 650),
+        { passive: true }
+      );
+      backTop.addEventListener('click', () =>
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      );
+
+      // Client-side validation, then hand off to official WhatsApp contact.
+      const form = document.getElementById('contact-form');
+      const statusBox = document.getElementById('form-status');
+      const whatsappNumber = '2348086001110';
+      const requiredIds = ['name', 'email', 'phone', 'message'];
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const phonePattern = /^\+?[0-9\s().-]{7,20}$/;
+      function showFieldError(id, message) {
+        const input = document.getElementById(id);
+        input.classList.toggle('invalid', Boolean(message));
+        document.getElementById(id + '-error').textContent = message || '';
+        input.setAttribute('aria-invalid', String(Boolean(message)));
+      }
+      function validateForm() {
+        const values = Object.fromEntries(new FormData(form).entries());
+        const errors = {
+          name:
+            String(values.name || '').trim().length >= 2
+              ? ''
+              : 'Please enter your full name.',
+          email: emailPattern.test(String(values.email || '').trim())
+            ? ''
+            : 'Please enter a valid email address.',
+          phone: phonePattern.test(String(values.phone || '').trim())
+            ? ''
+            : 'Please enter a valid phone number.',
+          message:
+            String(values.message || '').trim().length >= 10
+              ? ''
+              : 'Please enter at least 10 characters.',
+        };
+        Object.entries(errors).forEach(([id, message]) =>
+          showFieldError(id, message)
+        );
+        return {
+          valid: Object.values(errors).every(message => !message),
+          values,
+        };
+      }
+      requiredIds.forEach(id =>
+        document.getElementById(id).addEventListener('input', () => {
+          const input = document.getElementById(id);
+          if (input.classList.contains('invalid')) validateForm();
+          statusBox.className = 'form-status';
+        })
+      );
+      form.addEventListener('submit', event => {
+        event.preventDefault();
+        statusBox.className = 'form-status';
+        const result = validateForm();
+        if (!result.valid) {
+          statusBox.className = 'form-status show error';
+          statusBox.textContent =
+            'Please correct the highlighted fields before continuing.';
+          const firstInvalid = form.querySelector('.invalid');
+          if (firstInvalid) firstInvalid.focus();
+          return;
+        }
+        const values = result.values;
+        const message = [
+          'MDGIFT Website Enquiry',
+          'Name: ' + String(values.name).trim(),
+          'Email: ' + String(values.email).trim(),
+          'Phone: ' + String(values.phone).trim(),
+          'Area of interest: ' + String(values.interest || 'General enquiry'),
+          'Message: ' + String(values.message).trim(),
+        ].join('\n');
+        statusBox.className = 'form-status show success';
+        statusBox.textContent =
+          'Your details are prepared for WhatsApp. WhatsApp will open in a new tab; review the message and press Send there.';
+        window.open(
+          'https://wa.me/' +
+            whatsappNumber +
+            '?text=' +
+            encodeURIComponent(message),
+          '_blank',
+          'noopener,noreferrer'
+        );
+      });
+    </script>
+  </body>
+</html>
