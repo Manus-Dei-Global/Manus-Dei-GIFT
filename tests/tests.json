@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Navigate the MDGIFT page and open an FAQ",
+    "sanity": true,
+    "viewport": "desktop",
+    "covers": [
+      "single-file landing page rendering",
+      "sticky navigation",
+      "section scrolling",
+      "FAQ accordion"
+    ],
+    "description": "Checks the critical landing page navigation and FAQ interaction.",
+    "steps": [
+      "Open the landing page",
+      "Choose Initiatives in the navigation",
+      "Scroll to FAQ and open the first question"
+    ],
+    "expected": "Initiatives section is reached, the FAQ section loads, and the selected answer expands."
+  },
+  {
+    "name": "Check mobile menu and registration field validation",
+    "viewport": "mobile",
+    "covers": [
+      "360px/375px mobile layout",
+      "hamburger menu open and close",
+      "required fields",
+      "email and phone validation"
+    ],
+    "description": "Confirms the mobile navigation works and invalid form details are rejected clearly.",
+    "steps": [
+      "Open the page at mobile width",
+      "Open and close the hamburger menu",
+      "Submit the contact form with empty fields"
+    ],
+    "expected": "The menu opens and closes without overflow, and the form displays validation messages without opening WhatsApp."
+  },
+  {
+    "name": "Prepare a valid enquiry for WhatsApp",
+    "viewport": "desktop",
+    "covers": [
+      "valid contact form submission",
+      "WhatsApp handoff",
+      "prepared message",
+      "no server-side form handling"
+    ],
+    "description": "Verifies valid form details are formatted into a WhatsApp handoff instead of being posted to a backend.",
+    "steps": [
+      "Enter a valid name, email, phone and message",
+      "Choose an area of interest",
+      "Submit the form"
+    ],
+    "expected": "A prepared MDGIFT enquiry is opened through the official WhatsApp number and the form explains that the visitor must review and send the message."
+  },
+  {
+    "name": "Use contact QR and footer navigation",
+    "viewport": "mobile",
+    "covers": [
+      "provided WhatsApp QR resource",
+      "official phone links",
+      "official URL",
+      "footer initiative links",
+      "back-to-top button"
+    ],
+    "description": "Checks the contact options and navigation controls remain available at mobile width.",
+    "steps": [
+      "Scroll to the contact section and inspect the QR code and phone links",
+      "Follow a footer initiative link",
+      "Use the back-to-top button"
+    ],
+    "expected": "The contact links have valid destinations, the footer link scrolls to Initiatives, and back-to-top returns to the page start."
+  }
+]
