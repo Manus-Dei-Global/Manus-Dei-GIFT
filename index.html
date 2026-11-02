@@ -28,12 +28,7 @@
     <meta property="og:image" content="./resources/mdgift-logo-white.png" />
     <link rel="icon" type="image/png" href="./resources/mdgift-logo.png" />
     <title>Manus DEI GLOBAL | Transformation &amp; Revival</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:wght@400;500;600;700;800&family=Yellowtail&display=swap"
-      rel="stylesheet"
-    />
+    <!-- The requested Times New Roman family is system-installed; no web font download is needed. -->
     <style>
       /* MDGIFT visual system: edit these variables to update the site palette. */
       :root {
@@ -60,10 +55,7 @@
         margin: 0;
         color: var(--charcoal);
         background: var(--page);
-        font:
-          16px/1.7 'Open Sans',
-          Arial,
-          sans-serif;
+        font: 16px/1.7 'Times New Roman', Times, serif;
         -webkit-font-smoothing: antialiased;
       }
       img {
@@ -103,16 +95,18 @@
         letter-spacing: 0.19em;
         margin: 0 0 14px;
       }
-      h1,
-      h2,
-      h3,
-      .heavy {
-        font-family: 'Archivo Black', Impact, sans-serif;
-        font-weight: 400;
-        line-height: 1.12;
-        letter-spacing: -0.035em;
+      /* Display headings use a narrower Times-style serif treatment; body copy stays in regular Times New Roman. */
+      h1, h2, h3, .heavy {
+        font-family: 'Times New Roman', Times, serif;
+        font-stretch: condensed;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: -0.025em;
         margin: 0;
       }
+      h1, h2 { font-variant: small-caps; }
+      h1 { font-size: clamp(3rem, 8.6vw, 6.6rem); }
+      h3 { font-size: 1.2rem; letter-spacing: -0.015em; }
       h2 {
         font-size: clamp(2rem, 4.6vw, 3.3rem);
       }
@@ -121,7 +115,8 @@
         letter-spacing: -0.025em;
       }
       .script {
-        font-family: 'Yellowtail', cursive;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
         font-weight: 400;
       }
       .gold-text {
@@ -143,9 +138,10 @@
         position: sticky;
         top: 0;
         z-index: 100;
-        background: rgba(247, 247, 247, 0.96);
+        background: rgba(51, 49, 50, 0.98);
         backdrop-filter: blur(14px);
-        border-bottom: 1px solid rgba(51, 49, 50, 0.09);
+        border-bottom: 1px solid rgba(212, 168, 85, 0.32);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
       }
       .nav {
         display: flex;
@@ -160,16 +156,13 @@
         min-width: 0;
       }
       .brand img {
-        width: 168px;
-        max-height: 54px;
+        width: 225px;
+        max-height: 72px;
         object-fit: contain;
       }
-      .brand .logo-dark {
-        display: block;
-      }
-      .brand .logo-light {
-        display: none;
-      }
+      /* Use the white-and-gold wordmark for crisp contrast on the charcoal navbar. */
+      .brand .logo-dark { display: none; }
+      .brand .logo-light { display: block; }
       .brand-fallback {
         display: none;
         align-items: baseline;
@@ -178,15 +171,11 @@
         font-size: 1rem;
       }
       .brand-fallback .manus {
-        font:
-          1.3rem 'Yellowtail',
-          cursive;
+        font: italic 1.3rem 'Times New Roman', Times, serif;
         color: var(--gold-deep);
       }
       .brand-fallback .dei {
-        font:
-          1.15rem 'Archivo Black',
-          sans-serif;
+        font: 700 1.15rem 'Times New Roman', Times, serif;
       }
       .brand-fallback .global {
         font-size: 0.62rem;
@@ -200,14 +189,15 @@
       .nav-links a {
         padding: 10px 11px;
         border-radius: 9px;
+        color: rgba(255, 255, 255, 0.92);
         font-size: 0.88rem;
         font-weight: 700;
         position: relative;
       }
       .nav-links a:hover,
       .nav-links a.active {
-        color: var(--gold-deep);
-        background: rgba(212, 168, 85, 0.1);
+        color: var(--gold);
+        background: rgba(212, 168, 85, 0.15);
       }
       .btn {
         display: inline-flex;
@@ -246,8 +236,8 @@
       }
       .menu-toggle {
         display: none;
-        border: 1px solid var(--line);
-        background: white;
+        border: 1px solid rgba(255, 255, 255, 0.24);
+        background: #454244;
         border-radius: 12px;
         padding: 10px;
         width: 45px;
@@ -257,8 +247,8 @@
         display: block;
         height: 2px;
         width: 22px;
+        background: #ffffff;
         margin: 4px auto;
-        background: var(--charcoal);
         transition: transform 0.2s ease;
       }
       .hero {
@@ -386,9 +376,7 @@
         padding: 0;
         margin: 0;
         color: #f2d69c;
-        font:
-          1.75rem/1.38 'Yellowtail',
-          cursive;
+        font: italic 1.75rem/1.38 'Times New Roman', Times, serif;
       }
       .scripture cite {
         display: block;
@@ -517,9 +505,7 @@
       .impact-item strong {
         display: block;
         color: var(--gold);
-        font:
-          1.55rem 'Archivo Black',
-          sans-serif;
+        font: 700 1.55rem 'Times New Roman', Times, serif;
       }
       .impact-item span {
         font-size: 0.76rem;
@@ -625,24 +611,24 @@
         overflow-wrap: anywhere;
       }
       .qr-card {
-        padding: 18px;
+        padding: 12px;
         border-radius: 16px;
         background: white;
         color: var(--charcoal);
         margin-top: 24px;
-        max-width: 250px;
+        width: min(100%, 250px);
+        overflow: hidden;
       }
+      .qr-card > a { display: block; width: 100%; aspect-ratio: 1 / 1; overflow: hidden; }
       .qr-card img {
         width: 100%;
-        aspect-ratio: 1/1;
-        object-fit: contain;
+        height: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        object-position: center;
+        transform: scale(1.5);
       }
-      .qr-card p {
-        color: var(--ink-soft);
-        font-size: 0.78rem;
-        margin: 10px 0 0;
-        text-align: center;
-      }
+      .qr-card p { display: none; }
       .form-card {
         background: white;
         border: 1px solid rgba(51, 49, 50, 0.08);
@@ -733,8 +719,8 @@
         gap: 38px;
       }
       .footer-logo {
-        width: 185px;
-        max-height: 70px;
+        width: 260px;
+        max-height: 110px;
         object-fit: contain;
       }
       .footer-brand p {
@@ -867,8 +853,8 @@
           min-height: 70px;
         }
         .brand img {
-          width: 145px;
-          max-height: 48px;
+          width: 175px;
+          max-height: 58px;
         }
         .menu-toggle {
           display: block;
@@ -948,6 +934,8 @@
         .scripture blockquote {
           font-size: 1.55rem;
         }
+        .qr-card { width: min(100%, 280px); }
+        .brand img { width: 175px; max-height: 58px; }
         .card,
         .form-card,
         .contact-panel {
@@ -982,9 +970,9 @@
       <nav class="nav container" aria-label="Primary navigation">
         <a class="brand" href="#top" aria-label="Manus DEI GLOBAL home">
           <img
-            class="logo-dark"
-            src="./resources/mdgift-logo.png"
-            alt="Manus DEI GLOBAL logo"
+            class="logo-light"
+            src="./resources/mdgift-logo-white.png"
+            alt="Manus DEI GLOBAL white and gold logo"
             onerror="
               this.style.display = 'none';
               document.querySelector('.brand-fallback').style.display =
@@ -1596,8 +1584,8 @@
             <a href="#top" aria-label="Back to MDGIFT home"
               ><img
                 class="footer-logo"
-                src="./resources/mdgift-logo-white.png"
-                alt="Manus DEI GLOBAL white logo"
+                src="./resources/mdgift-logo.png"
+                alt="Manus DEI GLOBAL black logo"
                 loading="lazy"
                 onerror="this.style.display = 'none'"
             /></a>
