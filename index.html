@@ -160,7 +160,7 @@
         max-height: 72px;
         object-fit: contain;
       }
-      /* Use the white-and-gold wordmark for crisp contrast on the charcoal navbar. */
+      /* Header wordmark visibility. */
       .brand .logo-dark { display: none; }
       .brand .logo-light { display: block; }
       .brand-fallback {
@@ -984,6 +984,22 @@
           transform: none;
         }
       }
+
+      /* Give the swapped wordmarks enough space and contrasting backgrounds. */
+      .nav { min-height: 98px; }
+      .brand { position: relative; width: 270px; height: 88px; flex-shrink: 0; overflow: hidden; }
+      .brand img { position: absolute; width: 270px; height: auto; max-height: none; left: 0; top: 50%; transform: translateY(-50%); }
+      .footer-brand > a:first-child { display: flex; align-items: center; justify-content: center; width: min(100%, 330px); padding: 18px 20px; border-radius: 12px; background: #fff; }
+      .footer-logo { display: block; width: 100%; height: auto; max-height: none; }
+      @media (max-width: 900px) {
+        .nav { min-height: 88px; }
+        .brand { width: 230px; height: 78px; }
+        .brand img { width: 230px; max-height: none; }
+      }
+      @media (max-width: 360px) {
+        .brand { width: 205px; }
+        .brand img { width: 205px; }
+      }
     </style>
   </head>
   <body>
@@ -992,7 +1008,7 @@
         <a class="brand" href="#top" aria-label="Manus DEI GLOBAL home">
           <img
             class="logo-light"
-            src="./resources/mdgift-logo-white.png"
+            src="./resources/mdgift-logo.png"
             alt="Manus DEI GLOBAL white and gold logo"
             onerror="
               this.style.display = 'none';
@@ -1553,8 +1569,8 @@
             <a href="#top" aria-label="Back to MDGIFT home"
               ><img
                 class="footer-logo"
-                src="./resources/mdgift-logo.png"
-                alt="Manus DEI GLOBAL black logo"
+                src="./resources/mdgift-logo-white.png"
+                alt="Manus DEI GLOBAL black and gold logo"
                 loading="lazy"
                 onerror="this.style.display = 'none'"
             /></a>
