@@ -463,6 +463,27 @@
         width: 27px;
         height: 27px;
       }
+      .initiative-logo {
+        width: 100%;
+        height: 164px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 24px;
+      }
+      .initiative-logo img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        max-width: 280px;
+        object-fit: contain;
+        object-position: center;
+      }
+      .initiative-logo--priesthood-assembly img,
+      .initiative-logo--bank-of-welfare img { max-width: 200px; }
+      @media (max-width: 600px) {
+        .initiative-logo { height: 152px; }
+      }
       .initiative-card h3 {
         margin-bottom: 8px;
       }
@@ -1127,17 +1148,8 @@
           </div>
           <div class="initiative-grid">
             <article class="card initiative-card reveal">
-              <div class="initiative-icon" aria-hidden="true">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                >
-                  <path
-                    d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6M8 10h.01M16 10h.01"
-                  />
-                </svg>
+              <div class="initiative-logo initiative-logo--christian-centre">
+                <img src="./resources/initiatives/christian-centre.png" alt="Manus Dei Christian Centre logo" width="600" height="240" loading="lazy" />
               </div>
               <h3>Manus Dei Christian Centre</h3>
               <p class="initiative-tagline">“Building According to Pattern”</p>
@@ -1156,16 +1168,8 @@
               </ul>
             </article>
             <article class="card initiative-card reveal">
-              <div class="initiative-icon" aria-hidden="true">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                >
-                  <path d="M12 3v18M5 8h14M5 16h14" />
-                  <circle cx="12" cy="12" r="9" />
-                </svg>
+              <div class="initiative-logo initiative-logo--project-i-can">
+                <img src="./resources/initiatives/project-i-can.png" alt="Project I CAN logo" width="600" height="240" loading="lazy" />
               </div>
               <h3>Project I CAN</h3>
               <p class="initiative-tagline">
@@ -1179,16 +1183,8 @@
               </p>
             </article>
             <article class="card initiative-card reveal">
-              <div class="initiative-icon" aria-hidden="true">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                >
-                  <circle cx="12" cy="12" r="9" />
-                  <path d="M12 3a13 13 0 0 1 0 18M3 12h18M5 6.5h14M5 17.5h14" />
-                </svg>
+              <div class="initiative-logo initiative-logo--mission-hope-light">
+                <img src="./resources/initiatives/mission-hope-light.png" alt="Mission Hope &amp; Light logo" width="600" height="240" loading="lazy" />
               </div>
               <h3>Mission Hope &amp; Light</h3>
               <p class="initiative-tagline">“Tripartite Prosperity”</p>
@@ -1201,17 +1197,8 @@
               </p>
             </article>
             <article class="card initiative-card reveal">
-              <div class="initiative-icon" aria-hidden="true">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                >
-                  <path
-                    d="M3 7h8l3 3h7M17 6l4 4-4 4M21 17h-8l-3-3H3M7 11l-4 3 4 4"
-                  />
-                </svg>
+              <div class="initiative-logo initiative-logo--bridge">
+                <img src="./resources/initiatives/bridge.png" alt="BRiDGE logo" width="600" height="240" loading="lazy" />
               </div>
               <h3>BRiDGE</h3>
               <p class="initiative-tagline">
@@ -1225,18 +1212,8 @@
               </p>
             </article>
             <article class="card initiative-card reveal">
-              <div class="initiative-icon" aria-hidden="true">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                >
-                  <path
-                    d="M12 3 4 7v5c0 5 3.4 7.8 8 9 4.6-1.2 8-4 8-9V7l-8-4Z"
-                  />
-                  <path d="m8 12 2.5 2.5L16 9" />
-                </svg>
+              <div class="initiative-logo initiative-logo--bank-of-welfare">
+                <img src="./resources/initiatives/bank-of-welfare.png" alt="Bank of Welfare logo" width="600" height="240" loading="lazy" />
               </div>
               <h3>Bank of Welfare</h3>
               <p class="initiative-tagline">
@@ -1255,16 +1232,8 @@
               </p>
             </article>
             <article class="card initiative-card reveal">
-              <div class="initiative-icon" aria-hidden="true">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                >
-                  <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z" />
-                  <path d="m9 12 2 2 4-4" />
-                </svg>
+              <div class="initiative-logo initiative-logo--priesthood-assembly">
+                <img src="./resources/initiatives/priesthood-assembly.png" alt="Priesthood Assembly logo" width="600" height="240" loading="lazy" />
               </div>
               <h3>Priesthood Assembly</h3>
               <p class="initiative-tagline">“Called. Chosen. Consecrated.”</p>
