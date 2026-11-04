@@ -989,8 +989,8 @@
       .nav { min-height: 98px; }
       .brand { position: relative; width: 270px; height: 88px; flex-shrink: 0; overflow: hidden; }
       .brand img { position: absolute; width: 270px; height: auto; max-height: none; left: 0; top: 50%; transform: translateY(-50%); }
-      .footer-brand > a:first-child { display: flex; align-items: center; justify-content: center; width: min(100%, 330px); padding: 18px 20px; border-radius: 12px; background: #fff; }
-      .footer-logo { display: block; width: 100%; height: auto; max-height: none; }
+      .footer-brand > a:first-child { display: block; position: relative; width: min(100%, 330px); height: 110px; overflow: hidden; }
+      .footer-logo { display: block; position: absolute; width: 100%; height: auto; max-height: none; left: 0; top: 50%; transform: translateY(-50%); }
       @media (max-width: 900px) {
         .nav { min-height: 88px; }
         .brand { width: 230px; height: 78px; }
@@ -1569,8 +1569,8 @@
             <a href="#top" aria-label="Back to MDGIFT home"
               ><img
                 class="footer-logo"
-                src="./resources/mdgift-logo-white.png"
-                alt="Manus DEI GLOBAL black and gold logo"
+                src="./resources/mdgift-logo.png"
+                alt="Manus DEI GLOBAL white and gold logo"
                 loading="lazy"
                 onerror="this.style.display = 'none'"
             /></a>
